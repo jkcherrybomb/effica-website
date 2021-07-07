@@ -18,6 +18,9 @@ const Navbar: React.FC = () => {
                 </Link>
             </Localized>
             <Localized lang={'pl'}>
+                <Link href={'/'}>
+                    <a> Strona Główna | </a>
+                </Link>
                 <Link href={'/Services'}>
                     <a> Nasze Usługi | </a>
                 </Link>
