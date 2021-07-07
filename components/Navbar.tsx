@@ -5,27 +5,27 @@ const Navbar: React.FC = () => {
         <nav>
             <Localized lang={'en'}>
                 <Link href={'/'}>
-                    <b> Main Page | </b>
+                    <a> Main Page | </a>
                 </Link>
                 <Link href={'/Services'}>
-                    <b> Our Services | </b>
+                    <a> Our Services | </a>
                 </Link>
                 <Link href={'/CareerOpportunity'}>
-                    <b> Career Opportunities | </b>
+                    <a> Career Opportunities | </a>
                 </Link>
                 <Link href={'/Actualise'}>
-                    <b> SAP S/4 HANA | </b>
+                    <a> SAP S/4 HANA | </a>
                 </Link>
             </Localized>
             <Localized lang={'pl'}>
                 <Link href={'/Services'}>
-                    <b> Nasze Usługi | </b>
+                    <a> Nasze Usługi | </a>
                 </Link>
                 <Link href={'/CareerOpportunity'}>
-                    <b> Kariera | </b>
+                    <a> Kariera | </a>
                 </Link>
                 <Link href={'/Actualise'}>
-                    <b> SAP S/4 HANA | </b>
+                    <a> SAP S/4 HANA | </a>
                 </Link>
             </Localized>
         </nav>
