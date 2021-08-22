@@ -8,8 +8,8 @@ const ServicesPage: React.FC = () => {
                     a range of services in Project System, Controlling, Plant
                     Maintenance and Work Clearance Management modules of the SAP
                     R/3 business solution. We are also in the business of
-                    integrating SAP with Web portals based on SharePoint &
-                    dotnetnuke technology.
+                    integrating SAP with Web portals based on SharePoint and
+                    DotNetNuke technology.
                 </p>
                 <p>
                     We cooperate and subcontract works with major Enterprise
@@ -114,12 +114,14 @@ const ServicesPage: React.FC = () => {
             <Localized lang={'pl'}>
                 <p>
                     Firma EFFICA istnieje od 2004 roku. Świadczymy usługi w
-                    zakresie implementacji modułów Project System (System
-                    projektowy), Controlling, Plant Maintenance (Gospodarka
-                    remontowa) oraz Work Clearance Management (Organizacja
-                    bezpiecznej pracy) systemu SAP R/3. Zajmujemy sie też
-                    integracją SAP z serwisami webowymi w technologiach
-                    SharePoint oraz dotnetnuke.
+                    zakresie implementacji i aktualizacji systemu SAP a także
+                    optymalizacji funkcjonalności SAP w zakresie procesów
+                    przemysłowych i organizacji projektów dla klientów (System
+                    projektowy SAP), Controllingu, Gospodarki remontowej oraz
+                    Organizacja bezpiecznej pracy (Work Clearance Management)
+                    systemu SAP S/4 Hana. Zajmujemy sie też integracją SAP z
+                    serwisami webowymi w technologiach SharePoint oraz
+                    DotNetNuke.
                 </p>
                 <p>
                     Regularnie współpracujemy i świadczymy podwykonawstwo dla

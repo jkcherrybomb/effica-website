@@ -60,13 +60,6 @@ const Senior: React.FC = () => {
                         advantage,
                     </li>
                 </ul>
-                <p>
-                    Please mail your cover letter, CV, photo, a documented
-                    average of marks from the course of studies, confirmation of
-                    scholarship or a stipend (scanned) to the following e-mail
-                    address:
-                </p>
-                <h4>biuro@effica.pl</h4>
             </Localized>
             <Localized lang={'pl'}>
                 <h3>Stanowisko: Senior SAP ABAP Consultant</h3>
@@ -131,20 +124,6 @@ const Senior: React.FC = () => {
                         Znajomości Java/Javascript będzie dodatkowym atutem,
                     </li>
                 </ul>
-                <p>
-                    Wszystkie zainteresowane osoby prosimy o składanie zgłoszeń
-                    zawierających list motywacyjny, zdjęcie, CV (życiorys),
-                    udokumentowaną średnią z studiów i potwierdze odbycia stażu
-                    lub stypendium (skan) na adres e-mail:
-                </p>
-                <h4>biuro@effica.pl</h4>
-                <h6>
-                    Prosimy o dopisanie na CV następującej klauzuli: "Wyrażam
-                    zgodę na przetwarzanie moich danych osobowych zawartych w
-                    mojej ofercie pracy dla potrzeb niezbędnych do realizacji
-                    procesu rekrutacji /zgodnie z Ustawą z dn. 29.08.97 roku o
-                    Ochronie danych osobowych Dz.Ust.nr 133 poz.883"
-                </h6>
             </Localized>
         </div>
     );

@@ -1,8 +1,27 @@
 import {DefaultTheme} from 'styled-components';
 
+type Color = string;
+
+export interface ITheme {
+    colors: {
+        primary: Color;
+        primaryStrong: Color;
+        secondary: Color;
+        white: Color;
+        gray: Color;
+        black: Color;
+    };
+    breakpoint: {
+        mobile: string;
+        tablet: string;
+    };
+    up: (bp: string, vert?: boolean) => string;
+    down: (bp: string, vert?: boolean) => string;
+    between: (low: string, high: string, vert?: boolean) => string;
+}
+
 declare module 'styled-components' {
     interface DefaultTheme {
-        myRed: string;
         breakpoint: {
             mobile: string;
             tablet: string;
@@ -13,8 +32,10 @@ declare module 'styled-components' {
     }
 }
 
+export interface IStyleArgument {
+    theme: DefaultTheme;
+}
 const EfficaTheme: DefaultTheme = {
-    myRed: '#fcc',
     breakpoint: {
         mobile: '576px',
         tablet: '1200px',
