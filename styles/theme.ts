@@ -1,8 +1,6 @@
-import {DefaultTheme} from 'styled-components';
-
 type Color = string;
 
-export interface ITheme {
+export interface ETheme {
     colors: {
         primary: Color;
         primaryStrong: Color;
@@ -20,25 +18,22 @@ export interface ITheme {
     between: (low: string, high: string, vert?: boolean) => string;
 }
 
-declare module 'styled-components' {
-    interface DefaultTheme {
-        breakpoint: {
-            mobile: string;
-            tablet: string;
-        };
-        up: (bp: string, vert?: boolean) => string;
-        down: (bp: string, vert?: boolean) => string;
-        between: (low: string, high: string, vert?: boolean) => string;
-    }
+export interface IStyleArgument {
+    theme: ETheme;
 }
 
-export interface IStyleArgument {
-    theme: DefaultTheme;
-}
-const EfficaTheme: DefaultTheme = {
+export const DefaultTheme: ETheme = {
     breakpoint: {
         mobile: '576px',
         tablet: '1200px',
+    },
+    colors: {
+        primary: '#72d360',
+        primaryStrong: '#1BBC07',
+        secondary: '#508ED6',
+        white: '#fff',
+        black: '#313131',
+        gray: 'rgba(217, 217, 217, 0.3)',
     },
     up: (breakpoint, vertical = false) =>
         `@media (min-${
@@ -53,5 +48,3 @@ const EfficaTheme: DefaultTheme = {
             vertical ? 'height' : 'width'
         }: calc(${breakpointMin} + 0.02px))`,
 };
-
-export default EfficaTheme;
