@@ -8,6 +8,7 @@ const GlobalStyle = createGlobalStyle`
     body {
         font-family: 'Catamaran';
         font-weight: 200;
+        padding-top: 65px;
     }
 `;
 

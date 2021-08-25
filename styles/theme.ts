@@ -8,6 +8,7 @@ export interface EfficaTheme {
         white: Color;
         gray: Color;
         black: Color;
+        babyBlue: Color;
     };
     breakpoint: {
         mobile: string;
@@ -33,6 +34,7 @@ export const DefaultTheme: EfficaTheme = {
         secondary: '#508ED6',
         white: '#fff',
         black: '#313131',
+        babyBlue: '#89c9f0',
         gray: 'rgba(217, 217, 217, 0.3)',
     },
     up: (breakpoint, vertical = false) =>
