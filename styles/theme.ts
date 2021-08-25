@@ -1,6 +1,6 @@
 type Color = string;
 
-export interface ETheme {
+export interface EfficaTheme {
     colors: {
         primary: Color;
         primaryStrong: Color;
@@ -18,11 +18,11 @@ export interface ETheme {
     between: (low: string, high: string, vert?: boolean) => string;
 }
 
-export interface IStyleArgument {
-    theme: ETheme;
+export interface EfficaStyleArgument {
+    theme: EfficaTheme;
 }
 
-export const DefaultTheme: ETheme = {
+export const DefaultTheme: EfficaTheme = {
     breakpoint: {
         mobile: '576px',
         tablet: '1200px',

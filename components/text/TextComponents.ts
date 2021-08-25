@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import {addProps} from '../../utils/ComponentUtils';
-import {IStyleArgument} from '../../styles/theme';
+import {EfficaStyleArgument} from '../../styles/theme';
 
 export enum FontWeight {
     Regular,
@@ -42,7 +42,7 @@ export const H0 = styled(addProps<TextProps>()(styled.h1``))`
     font-family: ${(p: TextProps) =>
         FontFromWeight(p.weight ?? FontWeight.Bold)};
     text-align: ${(p: TextProps) => p.align as string};
-    color: ${(p: IStyleArgument & TextProps) =>
+    color: ${(p: EfficaStyleArgument & TextProps) =>
         p.color
             ? p.color
             : p.primary
@@ -50,7 +50,7 @@ export const H0 = styled(addProps<TextProps>()(styled.h1``))`
             : p.secondary
             ? p.theme.colors.secondary
             : p.theme.colors.black};
-    ${(p: IStyleArgument) => p.theme.down(p.theme.breakpoint.mobile)} {
+    ${(p: EfficaStyleArgument) => p.theme.down(p.theme.breakpoint.mobile)} {
         ${(p) => (p.mobileDownscale ?? true ? 'font-size: 20px;' : '')}
     }
     ${(p) => (p.noMargin ? 'margin: 0' : '')}
@@ -61,7 +61,7 @@ export const H1 = styled(addProps<TextProps>()(styled.h1``))`
     font-family: ${(p: TextProps) =>
         FontFromWeight(p.weight ?? FontWeight.Bold)};
     text-align: ${(p: TextProps) => p.align as string};
-    color: ${(p: IStyleArgument & TextProps) =>
+    color: ${(p: EfficaStyleArgument & TextProps) =>
         p.color
             ? p.color
             : p.primary
@@ -69,7 +69,7 @@ export const H1 = styled(addProps<TextProps>()(styled.h1``))`
             : p.secondary
             ? p.theme.colors.secondary
             : p.theme.colors.black};
-    ${(p: IStyleArgument) => p.theme.down(p.theme.breakpoint.mobile)} {
+    ${(p: EfficaStyleArgument) => p.theme.down(p.theme.breakpoint.mobile)} {
         ${(p) => (p.mobileDownscale ?? true ? 'font-size: 17px;' : '')}
     }
     ${(p) => (p.noMargin ? 'margin: 0' : '')}
@@ -80,7 +80,7 @@ export const H2 = styled(addProps<TextProps>()(styled.h2``))`
     font-family: ${(p: TextProps) =>
         FontFromWeight(p.weight ?? FontWeight.Bold)};
     text-align: ${(p: TextProps) => p.align as string};
-    color: ${(p: IStyleArgument & TextProps) =>
+    color: ${(p: EfficaStyleArgument & TextProps) =>
         p.color
             ? p.color
             : p.primary
@@ -88,7 +88,7 @@ export const H2 = styled(addProps<TextProps>()(styled.h2``))`
             : p.secondary
             ? p.theme.colors.secondary
             : p.theme.colors.black};
-    ${(p: IStyleArgument) => p.theme.down(p.theme.breakpoint.mobile)} {
+    ${(p: EfficaStyleArgument) => p.theme.down(p.theme.breakpoint.mobile)} {
         ${(p) => (p.mobileDownscale ?? true ? 'font-size: 14px;' : '')}
     }
     ${(p) => (p.noMargin ? 'margin: 0' : '')}
@@ -99,7 +99,7 @@ export const H3 = styled(addProps<TextProps>()(styled.h3``))`
     font-family: ${(p: TextProps) =>
         FontFromWeight(p.weight ?? FontWeight.Bold)};
     text-align: ${(p: TextProps) => p.align as string};
-    color: ${(p: IStyleArgument & TextProps) =>
+    color: ${(p: EfficaStyleArgument & TextProps) =>
         p.color
             ? p.color
             : p.primary
@@ -107,7 +107,7 @@ export const H3 = styled(addProps<TextProps>()(styled.h3``))`
             : p.secondary
             ? p.theme.colors.secondary
             : p.theme.colors.black};
-    ${(p: IStyleArgument) => p.theme.down(p.theme.breakpoint.mobile)} {
+    ${(p: EfficaStyleArgument) => p.theme.down(p.theme.breakpoint.mobile)} {
         ${(p) => (p.mobileDownscale ?? true ? 'font-size: 12px;' : '')}
     }
     ${(p) => (p.noMargin ? 'margin: 0' : '')}
@@ -118,7 +118,7 @@ export const P = styled(addProps<TextProps>()(styled.p``))`
     font-family: ${(p: TextProps) =>
         FontFromWeight(p.weight ?? FontWeight.Regular)};
     text-align: ${(p: TextProps) => p.align as string};
-    color: ${(p: IStyleArgument & TextProps) =>
+    color: ${(p: EfficaStyleArgument & TextProps) =>
         p.color
             ? p.color
             : p.primary
@@ -126,7 +126,7 @@ export const P = styled(addProps<TextProps>()(styled.p``))`
             : p.secondary
             ? p.theme.colors.secondary
             : p.theme.colors.black};
-    ${(p: IStyleArgument) => p.theme.down(p.theme.breakpoint.mobile)} {
+    ${(p: EfficaStyleArgument) => p.theme.down(p.theme.breakpoint.mobile)} {
         ${(p) => (p.mobileDownscale ?? true ? 'font-size: 12px;' : '')}
     }
     ${(p) => (p.noMargin ? 'margin: 0' : '')}
@@ -137,7 +137,7 @@ export const P2 = styled(addProps<TextProps>()(styled.p``))`
     font-family: ${(p: TextProps) =>
         FontFromWeight(p.weight ?? FontWeight.Regular)};
     text-align: ${(p: TextProps) => p.align as string};
-    color: ${(p: IStyleArgument & TextProps) =>
+    color: ${(p: EfficaStyleArgument & TextProps) =>
         p.color
             ? p.color
             : p.primary
@@ -145,7 +145,7 @@ export const P2 = styled(addProps<TextProps>()(styled.p``))`
             : p.secondary
             ? p.theme.colors.secondary
             : p.theme.colors.black};
-    ${(p: IStyleArgument) => p.theme.down(p.theme.breakpoint.mobile)} {
+    ${(p: EfficaStyleArgument) => p.theme.down(p.theme.breakpoint.mobile)} {
         ${(p) => (p.mobileDownscale ?? true ? 'font-size: 12px;' : '')}
     }
     ${(p) => (p.noMargin ? 'margin: 0' : '')}
