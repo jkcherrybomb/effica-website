@@ -1,7 +1,7 @@
 import type {AppProps} from 'next/app';
 import Layout from '../components/Layout';
 import {createGlobalStyle, ThemeProvider} from 'styled-components';
-import EfficaTheme from '../styles/theme';
+import {DefaultTheme} from '../styles/theme';
 import Head from 'next/head';
 
 const GlobalStyle = createGlobalStyle`
@@ -13,7 +13,7 @@ const GlobalStyle = createGlobalStyle`
 
 function MyApp({Component, pageProps}: AppProps) {
     return (
-        <ThemeProvider theme={EfficaTheme}>
+        <ThemeProvider theme={DefaultTheme}>
             <GlobalStyle />
             <Head>
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
