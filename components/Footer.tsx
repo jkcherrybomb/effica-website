@@ -1,6 +1,5 @@
 import {Localized} from '../contexts/LanguageContext';
 import styled from 'styled-components';
-import Image from 'next/image';
 import {addProps} from '../utils/ComponentUtils';
 
 const Wrapper = styled(addProps()(styled.div``))`

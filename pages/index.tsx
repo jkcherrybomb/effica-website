@@ -3,9 +3,7 @@ import {Localized} from '../contexts/LanguageContext';
 import styled from 'styled-components';
 import {EfficaStyleArgument} from '../styles/theme';
 
-const Wrapperdiv = styled.div`
-    position: relative;
-`;
+const Wrapperdiv = styled.div``;
 
 const Panorama = styled.img`
     width: 100%;
