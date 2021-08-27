@@ -4,30 +4,49 @@ import Image from 'next/image';
 import {addProps} from '../utils/ComponentUtils';
 
 const Wrapper = styled(addProps()(styled.div``))`
-    background: #89c9f0;
+    background: #c5cfd8;
+    height: 250px;
+    font-size: 20px;
+    padding: 25px 75px 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('/images/DarkLogo.png');
+    background-repeat: no-repeat;
+    background-size: 350px;
+    background-position: bottom 50px right 100px;
 `;
 
-const LinksWrapper = styled(addProps()(styled.div``))`
-    float: right;
+const P = styled.p`
+    margin: 0.2em 0;
 `;
 
 const Footer: React.FC = () => {
     return (
         <Wrapper>
-            <LinksWrapper>
-                <Image src="/images/DarkLogo.png" width={400} height={130} />
-            </LinksWrapper>
             <Localized lang={'en'}>
-                <h3>Contact us</h3>
-                <p>Mobile phone number: +48 505 218 927</p>
-                <p>E-mail: biuro@effica.pl </p>
-                <p>Address: Tatrzańska 3, 81-814, Sopot, Poland </p>
+                <h1>Contact us</h1>
+                <P>
+                    <b>Mobile phone number:</b> +48 505 218 927
+                </P>
+                <P>
+                    <b>E-mail:</b> biuro@effica.pl{' '}
+                </P>
+                <P>
+                    <b>Address:</b> Tatrzańska 3, 81-814, Sopot, Poland{' '}
+                </P>
             </Localized>
             <Localized lang={'pl'}>
-                <h3>Skontaktuj się z nami</h3>
-                <p>Numer telefonu: +48 505 218 927</p>
-                <p>E-mail: biuro@effica.pl </p>
-                <p>Adres: Tatrzańska 3, 81-814, Sopot, Poland </p>
+                <h1>Skontaktuj się z nami</h1>
+                <P>
+                    <b>Numer telefonu:</b> +48 505 218 927
+                </P>
+                <P>
+                    <b>E-mail:</b> biuro@effica.pl{' '}
+                </P>
+                <P>
+                    <b>Adres:</b> Tatrzańska 3, 81-814, Sopot, Polska{' '}
+                </P>
             </Localized>
         </Wrapper>
     );

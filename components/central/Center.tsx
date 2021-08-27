@@ -9,7 +9,7 @@ type CenterProps = {
 };
 
 const Center = styled(addProps<CenterProps>()(styled.div``))`
-    max-width: ${(p) => p.maxWidth ?? 1250}px;
+    max-width: ${(p) => p.maxWidth ?? 1500}px;
     padding-left: ${(p) => (p.noLeftMargin ?? false ? 0 : 25)}px;
     padding-right: ${(p) => (p.noRightMargin ?? false ? 0 : 25)}px;
     margin-left: ${(p) => (p.noLeftMargin ?? false ? '0' : 'auto')};

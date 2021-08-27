@@ -74,6 +74,7 @@ const HeaderLink = styled.a`
     }
 
     text-align: center;
+    font-size: 18px;
 `;
 
 const Navbar: FunctionComponent = () => {
@@ -94,18 +95,33 @@ const Navbar: FunctionComponent = () => {
                 </Link>
                 <LinksWrapper open={open}>
                     <HeaderLink
+                        style={{
+                            textDecoration: 'none',
+                            color: 'black',
+                            fontWeight: 500,
+                        }}
                         onClick={() => setOpen(false)}
                         href={'/Services'}>
                         <Localized lang={'pl'}>Nasze Usługi</Localized>
                         <Localized lang={'en'}>Our Services</Localized>
                     </HeaderLink>
                     <HeaderLink
+                        style={{
+                            textDecoration: 'none',
+                            color: 'black',
+                            fontWeight: 500,
+                        }}
                         onClick={() => setOpen(false)}
                         href={'/CareerOpportunity'}>
                         <Localized lang={'pl'}>Kariera</Localized>
                         <Localized lang={'en'}>Career Opportunities</Localized>
                     </HeaderLink>
                     <HeaderLink
+                        style={{
+                            textDecoration: 'none',
+                            color: 'black',
+                            fontWeight: 500,
+                        }}
                         onClick={() => setOpen(false)}
                         href={'/Actualise'}>
                         <Localized lang={'pl'}>SAP S/4 HANA</Localized>

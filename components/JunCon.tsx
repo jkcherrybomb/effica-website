@@ -3,7 +3,7 @@ const JunCon: React.FC = () => {
     return (
         <div>
             <Localized lang={'en'}>
-                <h3>position: Junior CO Consultant</h3>
+                <h3>Position: Junior CO Consultant</h3>
                 <p>City: Sopot</p>
                 <p>Job description:</p>
                 <ul>

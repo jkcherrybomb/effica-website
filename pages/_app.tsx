@@ -9,6 +9,9 @@ const GlobalStyle = createGlobalStyle`
         font-family: 'Catamaran';
         font-weight: 200;
         padding-top: 65px;
+        padding-bottom: 0px;
+        margin: 0;
+        font-size: 20px;
     }
 `;
 
