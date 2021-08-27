@@ -20,12 +20,6 @@ const HeaderLink = styled.a`
     display: inline-block;
     line-height: 20px;
     min-width: 150px;
-    ${(p: EfficaStyleArgument) => p.theme.down(p.theme.breakpoint.mobile)} {
-        width: 100%;
-        min-width: unset;
-        margin-left: 0;
-        margin-right: 0;
-    }
     font-size: 20px;
     font-weight: 500;
 `;
@@ -33,6 +27,7 @@ const HeaderLink = styled.a`
 const Partners = styled.img`
     width: 800px;
     height: 800px;
+    text-align: center;
 `;
 
 export default function Home() {
