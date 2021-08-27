@@ -1,19 +1,27 @@
 import {Localized} from '../contexts/LanguageContext';
 import styled from 'styled-components';
 import {addProps} from '../utils/ComponentUtils';
+import {EfficaStyleArgument} from '../styles/theme';
 
 const Wrapper = styled(addProps()(styled.div``))`
     background: #c5cfd8;
     height: 250px;
-    font-size: 20px;
-    padding: 25px 75px 150px;
+    font-size: 18px;
+    padding: 25px 60px 150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-image: url('/images/DarkLogo.png');
     background-repeat: no-repeat;
-    background-size: 350px;
-    background-position: bottom 50px right 100px;
+    background-size: 200px;
+    background-position: bottom 20px right 20px;
+    ${(p: EfficaStyleArgument) => p.theme.up(p.theme.breakpoint.mobile)} {
+        padding: 25px 75px 150px;
+        font-size: 20px;
+        flex-direction: column;
+        background-size: 350px;
+        background-position: bottom 50px right 100px;
+    }
 `;
 
 const P = styled.p`

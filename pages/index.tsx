@@ -1,8 +1,7 @@
 import Link from 'next/link';
 import {Localized} from '../contexts/LanguageContext';
 import styled from 'styled-components';
-import {EfficaStyleArgument} from '../styles/theme';
-
+import Partners from '../components/Partners';
 const Wrapperdiv = styled.div``;
 
 const Panorama = styled.img`
@@ -22,12 +21,6 @@ const HeaderLink = styled.a`
     min-width: 150px;
     font-size: 20px;
     font-weight: 500;
-`;
-
-const Partners = styled.img`
-    width: 800px;
-    height: 800px;
-    text-align: center;
 `;
 
 export default function Home() {
@@ -106,8 +99,8 @@ export default function Home() {
                     <h2>Partners</h2>
                     <p>EFFICA has been trusted by:</p>
                 </Localized>
-                <Partners src="/images/BeFunky-collage.png" />
             </InnerWrapper>
+            <Partners />
         </Wrapperdiv>
     );
 }
