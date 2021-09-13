@@ -34,7 +34,7 @@ const Footer: React.FC = () => {
             <Localized lang={'en'}>
                 <h1>Contact us</h1>
                 <P>
-                    <b>Mobile phone number:</b> +48 505 218 927
+                    <b>Mobile phone number:</b> +48 505 010 872
                 </P>
                 <P>
                     <b>E-mail:</b> biuro@effica.pl{' '}
@@ -46,7 +46,7 @@ const Footer: React.FC = () => {
             <Localized lang={'pl'}>
                 <h1>Skontaktuj się z nami</h1>
                 <P>
-                    <b>Numer telefonu:</b> +48 505 218 927
+                    <b>Numer telefonu:</b> +48 505 010 872
                 </P>
                 <P>
                     <b>E-mail:</b> biuro@effica.pl{' '}
