@@ -30,6 +30,8 @@ const Partners: React.FC = () => {
             <p>Accenture</p>
             <Pics src="/images/ibm.png" />
             <p>IBM</p>
+            <Pics src="/images/koma_nord.png" />
+            <p>Koma Nord</p>
         </Partnersdiv>
     );
 };
